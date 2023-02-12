@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forum</title>
+    <script defer type="module" src="src/js/app.js"></script>
+    <link rel="stylesheet" href="src/sass/main.css" />
+    <script
+      src="https://kit.fontawesome.com/e51af751df.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+  </head>
+  <body>
+    <div class="app">
+      <header class="header">
+        <div class="logo">Forum</div>
+
+        <nav class="navigation">
+          <button class="navigation__icon navigation__icon--active">
+            <i class="fa-solid fa-house"></i>
+          </button>
+          <button class="navigation__icon">
+            <i class="fa-solid fa-calendar"></i>
+          </button>
+          <button class="navigation__icon">
+            <i class="fa-solid fa-user"></i>
+          </button>
+          <button class="navigation__icon">
+            <i class="fa-solid fa-people-group"></i>
+          </button>
+          <button class="navigation__icon">
+            <i class="fa-solid fa-microphone"></i>
+          </button>
+        </nav>
+
+        <input placeholder="Digite aqui para pesquisar..." type="text" class="search">
+
+        <div class="profile">
+          <button class="profile__msg"><i class="fa-solid fa-comment-dots"></i></button>
+          <button class="profile__notify"><i class="fa-solid fa-bell"></i></button>
+          <img src="./assets/avatar.png" alt="" class="profile__img avatar">
+          <span class="profile__name">Username</span>
+        </div>
+      </header>
+      <main class="main">
+        <div>
+          <div class="activities">
+            <div class="activities__item">
+              <div class="activities__icon">
+                <i class="fa-solid fa-certificate"></i>
+              </div>
+              <div class="activities__info">
+                <span class="activities__title">Novidades</span>
+                <span class="activities__description"
+                  >Encontre as últimas atualizações</span
+                >
+              </div>
+            </div>
+            <div class="activities__item activities__item--active">
+              <div class="activities__icon">
+                <i class="fa-solid fa-envelope-circle-check"></i>
+              </div>
+              <div class="activities__info ">
+                <span class="activities__title">Popular do Dia</span>
+                <span class="activities__description"
+                  >Escolhidos hoje por editores</span
+                >
+              </div>
+            </div>
+            <div class="activities__item">
+              <div class="activities__icon">
+                <i class="fa-solid fa-heart"></i>
+              </div>
+              <div class="activities__info">
+                <span class="activities__title"
+                  >Seguindo <span class="activities__followers">26</span></span
+                >
+                <span class="activities__description"
+                  >Explore os favoritos que você segue</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="tags">
+            <span class="title">Tags Populares</span>
+
+            <div class="tags__item">
+              <div class="tags__icon">
+                <i class="fa-solid fa-code"></i>
+              </div>
+              <div class="tags__info">
+                <span class="tags__title">#javascript</span>
+                <span class="tags__description">82.645 postaram nessa tag</span>
+              </div>
+            </div>
+            <div class="tags__item">
+              <div class="tags__icon">
+                <i class="fa-brands fa-bitcoin"></i>
+              </div>
+              <div class="tags__info">
+                <span class="tags__title">#bitcoin</span>
+                <span class="tags__description">82.645 postaram - Em alta</span>
+              </div>
+            </div>
+            <div class="tags__item">
+              <div class="tags__icon">
+                <i class="fa-solid fa-brush"></i>
+              </div>
+              <div class="tags__info">
+                <span class="tags__title">#design</span>
+                <span class="tags__description"
+                  >41.625 postaram - Em alta em São Paulo</span
+                >
+              </div>
+            </div>
+            <div class="tags__item">
+              <div class="tags__icon">
+                <i class="fa-solid fa-face-kiss-wink-heart"></i>
+              </div>
+              <div class="tags__info">
+                <span class="tags__title">#blogging</span>
+                <span class="tags__description">41.625 postaram nessa tag</span>
+              </div>
+            </div>
+            <div class="tags__item">
+              <div class="tags__icon">
+                <i class="fa-solid fa-book-open-reader"></i>
+              </div>
+              <div class="tags__info">
+                <span class="tags__title">#tutorial</span>
+                <span class="tags__description">31.625 postaram nessa tag</span>
+              </div>
+            </div>
+            <div class="tags__item">
+              <div class="tags__icon">
+                <i class="fa-solid fa-globe"></i>
+              </div>
+              <div class="tags__info">
+                <span class="tags__title">#seo</span>
+                <span class="tags__description">31.625 postaram nessa tag</span>
+              </div>
+            </div>
+          </div>
+          <div class="groups">
+            <span class="title">Grupos</span>
+
+            <div class="groups__item">
+              <div class="groups__icon">
+                <i class="fa-solid fa-code"></i>
+              </div>
+              <div class="groups__info">
+                <span class="groups__title">#javascript</span>
+                <span class="groups__description"
+                  >82.645 postaram nessa tag</span
+                >
+              </div>
+            </div>
+            <div class="groups__item">
+              <div class="groups__icon">
+                <i class="fa-brands fa-bitcoin"></i>
+              </div>
+              <div class="groups__info">
+                <span class="groups__title">#bitcoin</span>
+                <span class="groups__description"
+                  >82.645 postaram - Em alta</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="newpost">
+            <img src="./assets/avatar.png" alt="" class="user__img avatar">
+
+            <input
+              type="text"
+              class="newpost__input"
+              placeholder="Compartilhe o que tem em mente..."
+            />
+
+            <button class="newpost__btn">Criar Post</button>
+          </div>
+          <div class="feed">
+                <div class="feed__list">
+                </div>
+          </div>
+          <div class="pagination">
+            <button class="pagination__btn">1</button>
+            <button class="pagination__btn">2</button>
+            <button class="pagination__btn">3</button>
+            ...
+            <button class="pagination__btn">9</button>
+            <button class="pagination__btn">10</button>
+          </div>
+        </div>
+        <div>
+          <div class="meetups">
+          <span class="title">Encontros <i class="fa-solid fa-arrow-right"></i></span>
+
+          <div class="meetups__item">
+            <div class="meetups__icon">
+              <p class="meetups__month">FEV</p>
+              <p class="meetups__day">8</p>
+            </div>
+            <div class="meetups__info">
+              <span class="meetups__title">Encontro 1</span>
+              <span class="meetups__description"><i class="fa-brands fa-bitcoin"></i> Local Encontro</span>
+              <div class="meetup__tags">
+                <span class="tag">Remoto</span>
+                <span class="tag">Meio-período</span>
+                <span class="tag">Worldwide</span>
+              </div>
+            </div>
+          </div>
+          <div class="meetups__item">
+            <div class="meetups__icon">
+              <p class="meetups__month">MAR</p>
+              <p class="meetups__day">1</p>
+            </div>
+            <div class="meetups__info">
+              <span class="meetups__title">Encontro 2</span>
+              <span class="meetups__description"><i class="fa-brands fa-bitcoin"></i> Local Encontro</span>
+              <div class="meetup__tags">
+                <span class="tag">tag1</span>
+                <span class="tag">tag2</span>
+                <span class="tag">tag3</span>
+              </div>
+            </div>
+          </div>
+          <div class="meetups__item">
+            <div class="meetups__icon">
+              <p class="meetups__month">MAI</p>
+              <p class="meetups__day">25</p>
+            </div>
+            <div class="meetups__info">
+              <span class="meetups__title">Encontro 3</span>
+              <span class="meetups__description"><i class="fa-brands fa-bitcoin"></i> Local Encontro</span>
+              <div class="meetup__tags">
+                <span class="tag">tag1</span>
+                <span class="tag">tag2</span>
+                <span class="tag">tag3</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="podcasts">
+          <span class="title">Podcasts <i class="fa-solid fa-arrow-right"></i></span>
+
+          <div class="podcasts__item">
+            <div class="podcasts__icon">
+              <i class="fa-solid fa-code"></i>
+            </div>
+            <div class="podcasts__info">
+              <span class="podcasts__title">Saúde mental é muito importante.</span>
+              <span class="podcasts__author"
+                >Pessoa 1</span
+              >
+            </div>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+          <div class="podcasts__item">
+            <div class="podcasts__icon">
+              <i class="fa-brands fa-bitcoin"></i>
+            </div>
+            <div class="podcasts__info">
+              <span class="podcasts__title">Dinheiro, felicidade e produtividade.</span>
+              <span class="podcasts__author"
+                >Pessoa 2</span
+              >
+            </div>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </div>
+      </div></div>
+      </main>
+    </div>
+  </body>
+</html>
